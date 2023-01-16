@@ -18,11 +18,9 @@ server.listen(PORT, () => {
 
 const users = [];
 
-
 io.on("connection", (socket) => {
     console.log(`New client ${socket.id} connected`);
     // EVENTLISTENERS
-
     socket.on("adduser", (username) => {
         socket.user = username;
         users.push(username);

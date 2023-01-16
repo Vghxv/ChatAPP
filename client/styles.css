@@ -1,10 +1,11 @@
 *{
+    /* padding is the space between the content and the border */
     padding: 0px;
     /* margin is the space between the element and the border */
     margin: 0px;
     /* border-box is used to include padding and border in the width and height of the element */
     box-sizing: border-box;
-    
+
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
@@ -31,7 +32,7 @@ h2{
     list-style: none;
     display: flex;
     flex-flow: column;
-    background: #eee;
+    background: rgb(213, 211, 191);
     border-radius: 6px;
 
     box-shadow: 1px 0px 10px #eee;
@@ -43,13 +44,18 @@ h2{
 
 #messagelist li{
     background: white;
-    max-width: 200px;
+    border-radius: 10px;
+    /* max-width is used to set the maximum width of the element */
+    /* if the content is more than the max-width, it will be wrapped */
+    /* max-width: auto; */
+    /* min-width: 30% auto; */
     padding: 10px;
     margin: 10px;
 }
 
 #messagelist p:first-child{
-    color: purple;
+    color: rgb(117, 0, 128);
+    font-weight: bold;
 }
 
 

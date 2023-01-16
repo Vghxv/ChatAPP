@@ -1,5 +1,4 @@
-const socket = io("http://192.168.1.158:5000");
-
+const socket = io("http://"+window.location.hostname +":5000");
 const messageform = document.querySelector(".chatbox form");
 const messageList = document.querySelector("#messagelist");
 const userList = document.querySelector("ul#users");

@@ -47,7 +47,7 @@ h2{
     border-radius: 10px;
     /* max-width is used to set the maximum width of the element */
     /* if the content is more than the max-width, it will be wrapped */
-    /* max-width: auto; */
+    max-width: 30%;
     /* min-width: 30% auto; */
     padding: 10px;
     margin: 10px;

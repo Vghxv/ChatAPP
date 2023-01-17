@@ -9,13 +9,6 @@ const useraddinput = document.querySelector(".modal input");
 
 const messages = [];
 let users = [];
-let listItems = document.querySelectorAll('#messagelist li');
-
-listItems.forEach(function(item) {
-    let itemWidth = item.offsetWidth;
-    console.log(itemWidth);
-    item.style.maxWidth = itemWidth + 'px';
-});
 
 socket.on("message_client", (data) => {
     messages.push(data);
